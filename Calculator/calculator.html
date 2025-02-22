@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Calculator</h1>
+        <div class="calculator-container">
+            <input id="display" type="text" placeholder="0" maxlength="16">
+            <div class="keys">
+                <button onclick="resetDisplay()" class="operatorBtn">AC</button>
+                <button onclick="backSpace()" class="operatorBtn">DEL</button>
+                <button onclick="appendToDisplay('.')" class="operatorBtn">.</button>
+                <button onclick="appendToDisplay('/')" class="operatorBtn">/</button>
+            </div>
+            <div class="keys">
+                <button onclick="appendToDisplay('7')" class="btn">7</button>
+                <button onclick="appendToDisplay('8')" class="btn">8</button>
+                <button onclick="appendToDisplay('9')" class="btn">9</button>
+                <button onclick="appendToDisplay('*')" class="operatorBtn">x</button>
+            </div>
+            <div class="keys">
+                <button onclick="appendToDisplay('4')" class="btn">4</button>
+                <button onclick="appendToDisplay('5')" class="btn">5</button>
+                <button onclick="appendToDisplay('6')" class="btn">6</button>
+                <button onclick="appendToDisplay('-')" class="operatorBtn">-</button>
+            </div>
+            <div class="keys">
+                <button onclick="appendToDisplay('1')" class="btn">1</button>
+                <button onclick="appendToDisplay('2')" class="btn">2</button>
+                <button onclick="appendToDisplay('3')" class="btn">3</button>
+                <button onclick="appendToDisplay('+')" class="operatorBtn">+</button>
+            </div>
+            <div class="keys" style="margin-bottom: 10px">
+                <button onclick="appendToDisplay('00')" class="btn">00</button>
+                <button onclick="appendToDisplay('0')" class="btn">0</button>
+                <button onclick="getResult()" class="operatorBtn" style="width: 150px">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
