@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  /* background-color:; */
+}
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.choicesContainer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.choice {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choice:hover {
+  background-color: #416788;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.recordContainer {
+  margin-top: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 4rem;
+}
+#userRecord,
+#compRecord {
+  font-size: 3rem;
+}
+.msgContainer {
+  margin-top: 10rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#msg {
+  margin-top: 3rem;
+  display: inline;
+  padding: 0.7rem;
+  background-color: #416788;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
